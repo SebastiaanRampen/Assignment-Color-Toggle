@@ -1,0 +1,82 @@
+@import "./constants";
+
+body {
+  background-color: $color_home;
+}
+
+#text_line {
+  position: fixed;
+  top: 0;
+  left: 70px;
+  line-height: 60px;
+  width: auto;
+  font-size: 25px;
+}
+
+.btn-toggle-nav {
+  position: fixed;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url(hamburger_menu.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  cursor: pointer;
+}
+
+.btn-toggle-nav:hover {
+  opacity: 0.5;
+}
+
+.toggle-nav {
+  position: fixed;
+  display: flexbox;
+  align-items: center;
+  left: 0;
+  top: 60px;
+  width: 244px;
+  height: 0;
+
+  z-index: 1000;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+}
+
+.toggle-nav ul li {
+  line-height: 60px;
+  width: 240px;
+
+  list-style: none;
+  border: 2px solid $color_home;
+}
+
+.toggle-nav ul li:hover {
+  opacity: 0.8;
+}
+
+// .toggle-nav ul li:nth-child(1) {
+//   background-color: $color_home;
+// }
+// .toggle-nav ul li:nth-child(2) {
+//   background-color: $color_red;
+// }
+// .toggle-nav ul li:nth-child(3) {
+//   background-color: $color_orange;
+// }
+// .toggle-nav ul li:nth-child(4) {
+//   background-color: $color_purple;
+// }
+// .toggle-nav ul li:nth-child(5) {
+//   background-color: $color_green;
+// }
+
+.toggle-nav ul li input[type="radio"] {
+  margin: 0;
+  width: 20%;
+}
+
+.toggle-nav ul li label {
+  display: inline-block;
+  width: 80%;
+}

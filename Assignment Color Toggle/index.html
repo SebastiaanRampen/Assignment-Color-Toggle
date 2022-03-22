@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle Menu</title>
+    <link rel="stylesheet" href="resetstyle.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="main.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <div
+        class="btn-toggle-nav"
+        id="toggle-btn"
+        onmouseenter="enterMouseBtn()"
+        onmouseleave="leaveMouseBtn()"
+      ></div>
+
+      <p id="text_line">The current colour is grey</p>
+      <div
+        class="toggle-nav"
+        id="test"
+        onclick="changeBackgroundColor()"
+        onmouseenter="enterMouseNav()"
+        onmouseleave="leaveMouseNav()"
+      >
+        <ul>
+          <li>
+            <input
+              type="radio"
+              id="grey"
+              name="color_button"
+              value="lightgrey"
+              checked
+            /><label for="grey">(1) Home</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="red"
+              name="color_button"
+              value="red"
+            /><label for="red">(2) Red</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="orange"
+              name="color_button"
+              value="orange"
+            /><label for="orange">(3) Orange</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="purple"
+              name="color_button"
+              value="purple"
+            /><label for="purple">(4) Purple</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="green"
+              name="color_button"
+              value="green"
+            /><label for="green">(5) Green</label>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
